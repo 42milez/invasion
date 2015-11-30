@@ -1,0 +1,12 @@
+{
+  "autoload": {
+    "psr-4": {
+      "Invasion\\Actor\\": "actor/",
+      "Invasion\\Animation\\": "animation/",
+      "Invasion\\Config\\": "config/",
+      "Invasion\\Math\\": "math/",
+      "Invasion\\Object\\": "object/",
+      "Invasion\\System\\": "system/"
+    }
+  }
+}
