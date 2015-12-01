@@ -26,10 +26,14 @@ class Renderer {
         if ($this->isEnableFpsCounter) $this->fps++;
 
         // レベルをレンダリング
+        $renderingBuffer = '';
         foreach ($levelBuffer as $k1 => $line) {
-            foreach ($line as $k2 => $c) echo $c;
-            echo "\n";
+            foreach ($line as $k2 => $c) {
+              $renderingBuffer .= $c;
+            }
+            $renderingBuffer .= "\n";
         }
+        echo $renderingBuffer;
     }
 
     function toggleFpsCounter() {
