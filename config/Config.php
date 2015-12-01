@@ -28,7 +28,7 @@ class Config {
     const SYMBOL_SHIELD                  = '#';    // シールドシンボル
     const SYMBOL_PLAYER_BULLET           = '^';    // 弾丸（プレイヤー）シンボル
     const SYMBOL_ENEMY_BULLET            = '|';    // 弾丸（敵）シンボル
-    const RENDERING_INTERVAL             = 0.05;   // 20fps
+    const RENDERING_INTERVAL             = 0.03;   // 30fps
     const ENEMY_MOVE_INTERVAL            = 1;      // 敵の移動インターバル
     const MOVING_AMOUNT_LEFT             = -1;     // 左方向への移動量
     const MOVING_AMOUNT_RIGHT            = 1;      // 右方向への移動量
