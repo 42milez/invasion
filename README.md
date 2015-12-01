@@ -1,3 +1,17 @@
+# Start the game
+```
+$ php GameMain.php
+```
+
+# Controls
+```
+A: Move Left  
+D: Move Right  
+L: Attack
+```
+
+## License
+
 The MIT License
 
 Copyright (c) 2015 Akihiro TAKASE http://akihiro-takase.tumblr.com/
