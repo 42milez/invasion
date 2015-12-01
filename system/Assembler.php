@@ -290,13 +290,13 @@ class Assembler {
         // プレイヤーをマッピング
         $playerPos = $this->player->getPos();
         $c = strtoupper($this->levelBuffer[$playerPos->y][$playerPos->x]);
-        $this->levelBuffer[$playerPos->y][$playerPos->x] = "\033[0;32;1m$c\033[0m";
+        $this->levelBuffer[$playerPos->y][$playerPos->x] = "\e[0;32;1m$c\e[0m";
 
         // プレイヤーの弾丸をマッピング
         foreach ($this->playerBullets as $k => $bullet) {
             $pos = $bullet->getPos();
             $c = strtoupper($this->levelBuffer[$pos->y][$pos->x]);
-            $this->levelBuffer[$pos->y][$pos->x] = "\033[0;32;1m$c\033[0m";
+            $this->levelBuffer[$pos->y][$pos->x] = "\e[0;32;1m$c\e[0m";
         }
 
         // 敵をマッピング
@@ -304,7 +304,7 @@ class Assembler {
         foreach ($enemyUnit as $k => $enemy) {
             $pos = $enemy->getPos();
             $c = strtoupper($this->levelBuffer[$pos->y][$pos->x]);
-            $this->levelBuffer[$pos->y][$pos->x] = "\033[0;31;1m$c\033[0m";
+            $this->levelBuffer[$pos->y][$pos->x] = "\e[0;31;1m$c\e[0m";
         }
 
         // 敵の弾丸をマッピング
@@ -312,14 +312,14 @@ class Assembler {
         foreach ($enemyBullets as $k => $b) {
             $pos = $b->getPos();
             $c = strtoupper($this->levelBuffer[$pos->y][$pos->x]);
-            $this->levelBuffer[$pos->y][$pos->x] = "\033[0;31;1m$c\033[0m";
+            $this->levelBuffer[$pos->y][$pos->x] = "\e[0;31;1m$c\e[0m";
         }
 
         // シールドをマッピング
         foreach ($this->shields as $k => $shield) {
             $pos = $shield->getPos();
             $c = strtoupper($this->levelBuffer[$pos->y][$pos->x]);
-            $this->levelBuffer[$pos->y][$pos->x] = "\033[0;34;1m$c\033[0m";
+            $this->levelBuffer[$pos->y][$pos->x] = "\e[0;34;1m$c\e[0m";
         }
     }
 
