@@ -1,3 +1,8 @@
+# Requirements
+```
+PHP 5.6 +
+```
+
 # Start the game
 ```
 $ php GameMain.php
